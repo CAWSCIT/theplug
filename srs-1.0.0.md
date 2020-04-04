@@ -1,5 +1,3 @@
-# Frontend 
-
 # 1. Introduction
 This is an SRS for the 1.0.0 of the web based meeting finder provided by CA.
 
@@ -75,7 +73,7 @@ Or simply by
 
 - [x] Current location (So far no support for combining this with the other parameters exist in the backend)
 
-Upon searching the user will be presented with the results containing the meetings that match their search. The results will display the meeting name, description, day, time, tags, address and an embedded google map (which you can easily click to open in the Google Maps app).
+Upon searching the user will be presented with the results containing the meetings that match their search. The results will display the meeting name, description, day, time, tags, address and an embedded Google map (which they can easily click to open Google Maps).
 
 ## 3.2 External Interface Requirements
 The plugin will have two external dependencies. The version 1.0.0 of the CAWSITC Meeting API and the Google Maps Embed API.
