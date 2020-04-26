@@ -54,6 +54,7 @@ __Configuration__
 As a provider of the plugin you will have the ablity to configure the plugin in the following ways.
 - [x] What area to search within
 - [x] What radius to preform geo searches within
+    - No search radius should be the default, but the option to enforce a search radius should be available to web servants if they need it
 - [x] An upper limit to how many meetings are fetched when doing a geo search
     - No limit should be the default, but the option to enforce a limit should be available to web servants if they need it
 - [x] What ordering to use (day, city)
