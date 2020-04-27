@@ -11,7 +11,7 @@ __Configuration__
 
 As a provider of the plugin you will have the ablity to configure the plugin in the following ways.
 - [ ] Custom stylesheets
-- [ ] A language localization map
+- [ ] A language localization map to be used (will be uploaded to the API and the setting just points to which one to use, no support yet).
 
 __Usage__
 
@@ -20,17 +20,19 @@ As a user you will have to ability to search for meetings by a combining all of 
 
 The following parameters will also be avilable to the user.
 - [ ] Max distance
+- [ ] Ordering option day/city
 
 Advanced search (This should be hidden by default but a user can expand the plugin to display these options).
 - [ ] Area (the default is provided by the hoster)
 - [ ] District (the default is optionally provided by the hoster)
 
+The user has the ability to switch languages.
+- [ ] Language switching
+
 Autocomplete will be added to meeting name and place inputs.
 - [ ] Autocomplete name (no API support exists)
-- [ ] Autcomplete place (rough beta API support exists)
-
-The ability to change how meetings are ordered.
-- [ ] Ordering option day/city
+- [ ] Autcomplete place (no API support exists)
+    - *This is quite a difficult task which requires some creative thinking in both the frontend and backend. A user will want to be able to input either 'deutschland', 'germany' and 'tyskland' in the search field and as we query the API it should be able to find all german meetings and return them in either english or the localized format (depending on the locale setting set by the hoster or user). The current idea (which no support exists for) is to ask google for the english and area localized version of the location data and save them both when we create meetings. Then we could call the Google Places Autocomplete API (needs to be approved due to costs but is 100% worth it https://developers.google.com/places/web-service/usage-and-billing#ac-per-request). That way a user can input any language into the autocomplete input, the plugin will get a response directly from google in english and the localized format. Then we can display the english or localized format (again depending on the locale setting set by the hoster or user) and use the english version to query the API. This way get great user experience and solve autocompletion. This does require updating meeting schema, admin UI and adding API params. But thats done in a jiffy!*
 
 ## External Interface Requirements
 The plugin will have two external dependencies. The version 1.1.0 of the CAWSITC Meeting API and the Google Maps Embed API.
