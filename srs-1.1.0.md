@@ -1,5 +1,5 @@
 # Introduction
-This is an SRS for the 1.1.0 of the web based meeting finder provided by CA.
+This is an SRS for the 1.1.0 of the web based meeting finder provided by CA. This builds on the [1.0.0](https://github.com/CAWSCIT/theplug/blob/master/srs-1.0.0.md) version and is an extension of its functionality.
 
 # System Features and Requirements
 
@@ -20,13 +20,17 @@ As a user you will have to ability to search for meetings by a combining all of 
 
 The following parameters will also be avilable to the user.
 - [ ] Max distance
-Advenced search (This should be hidden by default but a user can expand the plugin to display these options)
+
+Advanced search (This should be hidden by default but a user can expand the plugin to display these options).
 - [ ] Area (the default is provided by the hoster)
 - [ ] District (the default is optionally provided by the hoster)
 
-Auto complete will be added to meeting name and place inputs
+Autocomplete will be added to meeting name and place inputs.
 - [ ] Autocomplete name (no API support exists)
 - [ ] Autcomplete place (rough beta API support exists)
+
+The ability to change how meetings are ordered.
+- [ ] Ordering option day/city
 
 ## External Interface Requirements
 The plugin will have two external dependencies. The version 1.1.0 of the CAWSITC Meeting API and the Google Maps Embed API.
